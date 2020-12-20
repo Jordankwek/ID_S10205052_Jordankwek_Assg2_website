@@ -1,0 +1,43 @@
+body, html{
+    font-family: 'Baskervville', Arial, serif;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+
+.container h1{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    font-size: 70px;
+    font-weight: 700;
+    bottom: 60%;
+}
+
+.container .btn {
+    position: absolute;
+    width: 30%;
+    top: 70%;
+    left: 35%;
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .container .btn:hover {
+    background-color: black;
+  }
