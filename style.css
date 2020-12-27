@@ -2,6 +2,7 @@ body, html{
     font-family: 'Baskervville', Arial, serif;
     height: 100%;
     margin: 0;
+    background-color: white;
     padding: 0px;
 }
 
@@ -17,7 +18,7 @@ body, html{
 
 .container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     opacity: 50%;
 }
 
@@ -133,6 +134,15 @@ body, html{
 
     .burger{
         display: block;
+    }
+
+    .container img {
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        left: 11%;
     }
   }
 
