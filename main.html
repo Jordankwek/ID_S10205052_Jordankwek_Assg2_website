@@ -20,13 +20,16 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Home</a>
+                <a href="#">Daily</a>
             </li>
             <li>
-                <a href="#">Home</a>
+                <a href="#">Monthly</a>
             </li>
             <li>
-                <button id="darkbtn" onclick="myFunction()">Light mode</button>
+                <a href="#">History</a>
+            </li>
+            <li>
+                <button id="dark-btn" onclick="myFunction()">Light mode</button>
             </li>
         </ul>
         <div class="burger">
@@ -35,6 +38,33 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <section class="info-container">
+        <div id="form">
+            <h2>Expenditure</h2>
+            <form id="form1" onsubmit="drawChart(); return false">
+                
+                <input type="text" id="foodvar" placeholder = "Food" autocomplete="off"/><br><br>
+                
+                <input type="text" id="beautyvar" placeholder = "Beauty" autocomplete="off"/><br><br>
+                
+                <input type="text" id="transportvar" placeholder = "Transport" autocomplete="off"/><br><br>
+               
+                <input type="text" id="entertainmentvar" placeholder = "Entertainment" autocomplete="off"><br><br>
+                
+                <input type="text" id="othervar" placeholder = "Others" autocomplete="off"/><br><br>
+
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+
+        </div>
+        <div id="piechart">
+            <p>Enter amount in the form to display a pie chart</p>
+        </div>
+        
+    </section>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="chart.js"></script>
     <script src="app.js"></script>
     <script src="toggleDark.js"></script>
 </body>
