@@ -1,13 +1,12 @@
 body, html{
-    font-family: 'Baskervville', Arial, serif;
+    font-family: 'Fredoka One', cursive;
     height: 100%;
     margin: 0;
-    background-color: rgb(236, 236, 236);
     padding: 0px;
 }
 
 .dark-mode {
-    background-color: grey;
+    background-color: rgb(70, 70, 70);
     color: white;
   }
 
@@ -55,7 +54,7 @@ body, html{
       justify-content: space-around;
       align-items: center;
       min-height: 8vh;
-      background-color:rgb(133, 86, 86);
+      background-image: linear-gradient(to right,rgb(243, 0, 0),rgb(8, 8, 197));
   }
 
   .logo{
@@ -64,6 +63,7 @@ body, html{
       color: rgb(206, 206, 206);
       text-transform: uppercase;
       letter-spacing: 5px;
+      cursor: pointer;
   }
 
   .nav-links{
@@ -86,7 +86,7 @@ body, html{
   }
 
   #dark-btn{
-    background-color: rgb(133, 86, 86);
+    background-color: rgb(14, 14, 14);
     color: whitesmoke;
     letter-spacing: 3px;
     font-weight: bold;
@@ -108,48 +108,103 @@ body, html{
   .info-container{
       display: flex;
       flex-direction: row;
+      box-sizing: border-box;
+      border: 2px solid black;
+
   }
 
   #piechart{
       position: relative;
-      left: 6%;
-      width: 100%;
-      height: 450px;
+      width: 60%;
+      height: 420px;
       background-color: grey;
-
   }
 
   #form {
-      font-family: Arial, Helvetica, sans-serif;
       padding: 5%;
-      padding-left: 15%;
       position: relative;
-      width: 65%;
-      text-align: center;
-  }
-
-  #form h2{
-      position: relative;
-      bottom: 5%;
+      width: 50%;
+      height: 420px;
   }
 
   #form1{
     position: relative;
-    top: 2%;
+    left: 20%;
+    bottom: 15%;
     width: 100%;
-    text-align: center;
+    text-align: left;
+  }
+
+  #form1 input{
+      opacity: 50%;
   }
 
   #form1 button{
       border-style: none;
+      background-color: rgb(209, 209, 209);
   }
+
+  #form1 button:hover{
+    background-color: grey;
+}
 
   .info-container p{
       text-align: center;
       position: relative;
-      top: 3%;
+      font-size: 120%;
+      top: 10%;
       font-weight: bolder;
   }
+
+  .intro-container{
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid black;
+  }
+
+  #purpose{
+      padding: 4%;
+      position: relative;
+      right: 1%;
+      width: 100%;
+      text-align: center;
+  }
+
+  .function-container{
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      border: 2px solid black;
+  }
+
+  .function-container h4{
+      padding: 4%;
+      width: 100%;
+  }
+
+  #functions{
+      display: flex;
+      width: 100%;
+      position: relative;
+  }
+
+  .function-item{
+      padding: 3%;
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-right: none;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 25%;
+  }
+
+  .function-item h6{
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+  }
+  
 
   @media screen and (max-width: 768px){
 
@@ -193,20 +248,30 @@ body, html{
     }
 
     #form{
-        text-align: left;
-        left: 25%;
+        width: 100%;
+    }
+
+    #form1{
+        top: 5%;
+        text-align: center;
+        left: 1%;
     }
 
     #piechart{
-        left: 1%;
+        width: 100%;
         z-index: 1;
         text-align: center;
+        left:0%;
+        right:5%;
     }
 
     .info-container{
         flex-wrap: wrap;
     }
 
+    .info-container p{
+        left: 1%;
+    }
   }
 
   .nav-active{
