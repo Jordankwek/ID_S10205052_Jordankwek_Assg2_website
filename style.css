@@ -3,11 +3,12 @@ body, html{
     height: 100%;
     margin: 0;
     padding: 0px;
+    background-color: rgb(255, 255, 255);
 }
 
 .dark-mode {
     background-color: rgb(70, 70, 70);
-    color: white;
+    color: whitesmoke;
   }
 
 .container {
@@ -141,7 +142,8 @@ body, html{
 
   #form1 button{
       border-style: none;
-      background-color: rgb(209, 209, 209);
+      background-color: rgb(41, 41, 41);
+      color: whitesmoke;
   }
 
   #form1 button:hover{
@@ -205,6 +207,70 @@ body, html{
     border-right: none;
   }
   
+  .page-container{
+      margin:10%;
+      margin-top: 3%;
+      padding-bottom: 20%;
+      width: 80%;
+      background-color: rgb(138, 62, 62);
+      text-align: center;
+  }
+
+  .page-head{
+      padding: 4%;
+      border-bottom: dotted;
+  }
+
+  .page-title{
+      font-size: 350%;
+  }
+
+  #record-container h2{
+      margin-top: 15%;
+
+  }
+
+  #record-container table{
+      width: 70%;
+      margin: 7%;
+      margin-top: 4%;
+      margin-left: 15%;
+      margin-bottom: 25%;
+      border: solid red;
+      border-radius: 20%;
+  }
+
+  .index{
+      width: 8%;
+      border-right: solid red;
+  }
+
+  .name{
+      width: 45%;
+      border-right: solid red;
+  }
+
+  .category{
+      width: 35%;
+      border-right: solid red;
+  }
+
+  .price{
+      width: 12%;
+  }
+
+  .record-form h2{
+      margin: 4%;
+  }
+
+  .record-form form input{
+      border: none;
+      height: 27px;
+  }
+
+  .record-form form select {
+      height: 27px;
+  }
 
   @media screen and (max-width: 768px){
 
@@ -271,6 +337,15 @@ body, html{
 
     .info-container p{
         left: 1%;
+    }
+
+    #record-container table{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .record-form{
+        margin-top: 50%;
     }
   }
 
