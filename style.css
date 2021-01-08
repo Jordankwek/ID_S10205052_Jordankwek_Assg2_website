@@ -1,14 +1,17 @@
+
+
 body, html{
     font-family: 'Fredoka One', cursive;
     height: 100%;
     margin: 0;
     padding: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7CED7FF;
 }
 
 .dark-mode {
     background-color: rgb(70, 70, 70);
     color: whitesmoke;
+    height: 100%;
   }
 
 .container {
@@ -55,7 +58,7 @@ body, html{
       justify-content: space-around;
       align-items: center;
       min-height: 8vh;
-      background-image: linear-gradient(to right,rgb(243, 0, 0),rgb(8, 8, 197));
+      background-color: #EF6079FF;
   }
 
   .logo{
@@ -212,7 +215,7 @@ body, html{
       margin-top: 3%;
       padding-bottom: 20%;
       width: 80%;
-      background-color: rgb(138, 62, 62);
+      background-color:#F99FC9FF;
       text-align: center;
   }
 
@@ -226,37 +229,42 @@ body, html{
   }
 
   #record-container h2{
-      margin-top: 15%;
+      margin-top: 10%;
 
   }
 
   #record-container table{
       width: 70%;
+      height: 300px;
       margin: 7%;
       margin-top: 4%;
       margin-left: 15%;
-      margin-bottom: 25%;
-      border: solid red;
+      margin-bottom: 15%;
+      border: solid black;
       border-radius: 20%;
+      overflow:auto;
   }
 
-  .index{
-      width: 8%;
-      border-right: solid red;
+  #record-body tr{
+      height: 50px;
   }
+
 
   .name{
       width: 45%;
-      border-right: solid red;
+      border-right: solid black;
+      border-bottom: solid black;
   }
 
   .category{
       width: 35%;
-      border-right: solid red;
+      border-right: solid black;
+      border-bottom: solid black;
   }
 
   .price{
-      width: 12%;
+      width: 20%;
+      border-bottom: solid black;
   }
 
   .record-form h2{
@@ -270,6 +278,108 @@ body, html{
 
   .record-form form select {
       height: 27px;
+  }
+
+  .budget-container{
+      margin-top: 5%;
+      width: 100%;
+      border-bottom: dotted;
+  }
+
+  .reminder-container{
+      display: flex;
+      margin-bottom: 3%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 16%;
+  }
+
+  .reminder-container h5{
+      border: solid 4px;
+      width: 25%;
+      position: absolute;
+      left: 65%;
+      background-color: chartreuse;
+  }
+
+  .spending-feed{
+      width: 100%;
+      height: 100%;
+      border-bottom:dotted;
+
+  }
+
+  .spending-feed h2{
+      padding-top: 5%;  
+  }
+
+  .spending-feed p{
+      padding-bottom: 5%;
+      border-bottom: dotted;
+  }
+
+  .feed-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 5%;
+  }
+
+  .feed-item{
+      margin: 1%;
+      width: 22%;
+      height: 250px;
+      border: solid;
+  }
+
+  .reddit-feed{
+      border-bottom: dotted;
+  }
+
+  .reddit-feed h2{
+      margin-top: 4%;
+  }
+
+  #reddit-post{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 500px;
+      overflow: scroll;
+      overflow-x: hidden;
+      margin-top: 5%;
+      border-top: dotted;
+  }
+
+  .post{
+      margin-top: 1%;
+      border: 1px solid;
+      width: 70%;
+  }
+
+  .form-header{
+      margin-bottom: 5%;
+      margin-top: 5%;
+  }
+
+  #update-form{
+      margin-bottom: 5%;
+  }
+
+  #set-form{
+      margin-bottom: 5%;
+  }
+
+  #update-budget{
+      border-bottom: dotted;
+  }
+
+  #set-budget{
+      border-bottom: dotted;
   }
 
   @media screen and (max-width: 768px){
@@ -346,6 +456,24 @@ body, html{
 
     .record-form{
         margin-top: 50%;
+    }
+
+
+    .reminder-container h4{
+        position: relative;
+        right: 13%;
+        font-size: 15px;
+    }
+
+    .reminder-container h5{
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .feed-item{
+        width: 40%;
+        height: 250px;
+        border: solid;
     }
   }
 
