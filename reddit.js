@@ -1,4 +1,4 @@
-let url = 'https://www.reddit.com/r/MoneySaving/hot.json'
+let url = 'https://www.reddit.com/r/MoneySaving/hot.json';
 
 const container= document.getElementById('reddit-post');
 
@@ -19,4 +19,4 @@ fetch(url)
             `;
         }
         container.insertAdjacentHTML('afterbegin',post);
-    })
+    });

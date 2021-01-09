@@ -23,16 +23,25 @@ updatesubmit.addEventListener("click", function(event){
         totalamount += parseFloat(amountSpent[i]);
     }
 
-    if(dailySpent - totalamount <= 0){
+    if(dailyBudget - totalamount <= 0){
         document.getElementById("damount").style.backgroundColor = "red";
+        $('.body').css('background-color','#FF6C5C');
+        $('.nav-bar').css('background-color','#D83C2D');
+        $('.page-container').css('background-color','#FFCCBB');
+
     }
     if(monthBudget - totalamount <= 0){
         document.getElementById("bamount").style.backgroundColor = "red";
+        $('.body').css('background-color','#FF6C5C');
+        $('.nav-bar').css('background-color','#D83C2D');
+        $('.page-container').css('background-color','#FFCCBB');
     }
+
     document.getElementById("bamount").innerHTML = "$" + (monthBudget - totalamount);
     document.getElementById("damount").innerHTML = "$" + (dailyBudget - totalamount);
     document.getElementById("samount").innerHTML = "$" + totalamount;
-});
+    document.getElementById("update-form").reset();
+}); 
 
 var setsubmit = document.getElementById("sbudget");
 
@@ -42,7 +51,5 @@ setsubmit.addEventListener("click", function(event){
     var dailyBudget = $('#dbudget').val();
     document.getElementById("bamount").innerHTML = "$" + monthBudget;
     document.getElementById("damount").innerHTML = "$" + dailyBudget;
+    document.getElementById("set-form").reset();
 });
-
-
-
