@@ -14,9 +14,9 @@ var updatesubmit = document.getElementById("ubudget");
 updatesubmit.addEventListener("click", function(event){
     event.preventDefault();
     var totalamount = 0;
-    var dailySpent = $('#spent').val(); 
-    var monthBudget = $('#mbudget').val();
-    var dailyBudget = $('#dbudget').val();
+    var dailySpent = Number($('#spent').val()); 
+    var monthBudget = Number($('#mbudget').val());
+    var dailyBudget = Number($('#dbudget').val());
     amountSpent.push(dailySpent);
     for (let i = 0 ; i<amountSpent.length; i++)
     {
@@ -37,10 +37,10 @@ updatesubmit.addEventListener("click", function(event){
         $('.page-container').css('background-color','#FFCCBB');
     }
 
-    document.getElementById("bamount").innerHTML = "$" + (monthBudget - totalamount);
-    document.getElementById("damount").innerHTML = "$" + (dailyBudget - totalamount);
+    document.getElementById("bamount").innerHTML = "$" + (monthBudget - dailySpent);
+    document.getElementById("damount").innerHTML = "$" + (dailyBudget - dailySpent);
     document.getElementById("samount").innerHTML = "$" + totalamount;
-    document.getElementById("update-form").reset();
+    
 }); 
 
 var setsubmit = document.getElementById("sbudget");
@@ -51,5 +51,4 @@ setsubmit.addEventListener("click", function(event){
     var dailyBudget = $('#dbudget').val();
     document.getElementById("bamount").innerHTML = "$" + monthBudget;
     document.getElementById("damount").innerHTML = "$" + dailyBudget;
-    document.getElementById("set-form").reset();
 });
