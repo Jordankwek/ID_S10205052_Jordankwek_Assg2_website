@@ -37,8 +37,8 @@ updatesubmit.addEventListener("click", function(event){
         $('.page-container').css('background-color','#FFCCBB');
     }
 
-    document.getElementById("bamount").innerHTML = "$" + (monthBudget - dailySpent);
-    document.getElementById("damount").innerHTML = "$" + (dailyBudget - dailySpent);
+    document.getElementById("bamount").innerHTML = "$" + (monthBudget - totalamount);
+    document.getElementById("damount").innerHTML = "$" + (dailyBudget - totalamount);
     document.getElementById("samount").innerHTML = "$" + totalamount;
     
 }); 
